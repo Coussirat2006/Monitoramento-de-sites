@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitoramento de Sites</title>
+</head>
+<body>
+    <h1>Painel de Monitoramento</h1>
+    <p>A nossa API será conectada aqui em breve!</p>
+    <script>
+        // 1. O navegador "bate na porta" da sua API
+        fetch('/api/status')
+            .then(resposta => resposta.json()) // 2. Traduz a resposta para JSON
+            .then(dados => {
+                // 3. Em vez de jogar na tela, vamos fofocar no painel secreto do navegador
+                console.log("Chegaram os dados da API!", dados);
+            });
+    </script>
+</body>
+</html>
